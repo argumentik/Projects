@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../font/SegoeUIVF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "MyCustomFont";
+}
+
+.mainViewWork {
+  margin-top: 10vh;
+  width: 85vw;
+  height: 100%;
+  border-radius: 2vw;
+}
+
+.workzone {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.workzone .header {
+  height: 22vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -100px;
+  background-color: white;
+}
+
+.workzone .header .headerContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin-top: 85px;
+  font-size: 22px;
+}
+
+.workzone .header .exitIcon {
+  margin-top: 3px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.workzone #tasks {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 2px;
+  height: 55px;
+}
+
+.workzone .header .tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 14px;
+}
+
+.workzone .header .tabs .tabsButtons {
+  border: none;
+  font-size: 22px;
+  width: 100%;
+  background-color: #bbbbbb;
+  cursor: pointer;
+  line-height: 25px;
+  padding: 7px;
+}
+
+.workzone .header .tabs #activeButton {
+  background-color: rgb(66, 170, 255);
+  border: none;
+  margin-top: -6px;
+  -webkit-transition: margin-top 0.5s;
+  transition: margin-top 0.5s;
+}
+
+.workzone .body {
+  height: 85vh;
+  width: 85vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workzone .body .post {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.workzone .body .postHelper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: -20px;
+  gap: 5px;
+}
+
+.difficulty {
+  margin-left: 20px;
+}
+
+.starIcon {
+  color: gold;
+}
+
+.postHelper button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: none;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+  width: 3vw;
+  height: 25px;
+  border-radius: 9px;
+}
+
+.TaskInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.TaskInfo button{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #bbbbbb;
+    font-weight: bold;
+    font-size: 15px;
+}
