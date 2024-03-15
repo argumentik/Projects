@@ -1,17 +1,23 @@
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import "../Css/workZone.css"
 import {useState} from "react";
 import Post from "./Post";
 import Tasks from "./Tasks";
 import OffersTask from "./OffersTask";
 import Statistic from "./Statistic";
+import SignIn from "./SignIn";
 
-const WorkZone = () => {
+const WorkZone = ({setShowWorkZone} : {setShowWorkZone:(show : boolean)=>void}) => {
     const [nameLabel, setNameLabel] = useState('Задания');
     const [activeButton, setActiveButton] = useState('button1');
     const [posts, setPosts] = useState([
     ])
+
+    const ExitFromPage = () => {
+        setShowWorkZone(false)
+    }
 
     const ChangePage = (nameLabel : string, buttonName : string) => {
         setActiveButton(buttonName);
@@ -24,7 +30,7 @@ const WorkZone = () => {
                 <div className="header">
                     <div className="headerContents">
                         <label htmlFor="">Арсений Королёв</label>
-                        <button className={'exitIcon'}>
+                        <button className={'exitIcon'} onClick={() => ExitFromPage()}>
                             <FontAwesomeIcon icon={faRightToBracket} />
                         </button>
                     </div>

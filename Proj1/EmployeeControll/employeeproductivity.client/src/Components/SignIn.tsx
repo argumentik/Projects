@@ -17,8 +17,8 @@ const SignIn = ( {setShowSignUpForm, setShowWorkZone} : {setShowSignUpForm: (sho
     return(
         <div className='container'>
             <h1>Sign In</h1>
-            <input type="text" placeholder='Email' ref={inputEmail}/>
-            <input type="password" placeholder='Password' ref={inputPassword}/>
+            <input type="text" placeholder='Email' autoComplete='off' ref={inputEmail}/>
+            <input type="password" placeholder='Password' autoComplete='off' ref={inputPassword}/>
             <div className="remindPass">
                 <a href="">Forgot password?</a>
             </div>

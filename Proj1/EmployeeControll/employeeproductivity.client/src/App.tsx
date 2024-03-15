@@ -12,7 +12,7 @@ function App() {
         <div>
             <div className="backimage" style={ showWorkZone ? {backgroundImage: `url(${backgrImageMain})`} : {backgroundImage: `url(${backgrImageForm})`}}>
                 <div style={{width:`${100}%`, height:`${100}%`, display:'flex', justifyContent:'center', alignItems:'center'}}>
-                    {showWorkZone ? <WorkZone/> : <Form setShowWorkZone={setShowWorkZone}/>}
+                    {showWorkZone ? <WorkZone setShowWorkZone={setShowWorkZone}/> : <Form setShowWorkZone={setShowWorkZone}/>}
                 </div>
             </div>
         </div>

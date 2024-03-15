@@ -8,7 +8,7 @@ const Tasks = ({posts}) => {
     const difficult = useRef(null)
 
     const AddPost = () =>{
-        if(title.current.value != "" && date.current.value != "" && difficult.current.value != ""){
+        if(title.current.value != "" && date.current.value != "" && difficult.current.value != "" && difficult.current.value <= 3 && difficult.current.value > 0){
             const newPost = {title: title.current.value.toString(), deadLine: date.current.value.toString(), countStars: difficult.current.value.toString()}
             setNewPosts([...newPosts, newPost])
             title.current.value = ""
